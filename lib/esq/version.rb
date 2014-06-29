@@ -1,3 +1,3 @@
 module Esq
-  VERSION = "0.0.0.pre1"
+  VERSION = "0.0.1"
 end
