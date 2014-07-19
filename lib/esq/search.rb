@@ -4,6 +4,6 @@ module Esq
 
     property :query, type: 'Esq::Query'
     property :filter, type: 'Esq::Filter'
-    property :sort, type: 'Esq::Sort'
+    property :sort, type: 'Esq::Sort', init_class: 'Esq::Sort'
   end
 end
