@@ -1,0 +1,19 @@
+language: ruby
+cache: bundler
+
+addons:
+  code_climate:
+    repo_token: 11b0c5b3ce4f952017d4423a8b0c2a0187bef66fe3c0eb0fe24316359928f827
+
+
+rvm:
+  - 2.1.1
+
+script: 'bundle exec rake spec'
+
+notifications:
+  email:
+    recipients:
+      - eturino@eturino.com
+    on_failure: change
+    on_success: never
