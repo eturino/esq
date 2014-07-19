@@ -1,5 +1,5 @@
 module Esq
   class Query
-    include Eapi::Common
+    include Eapi::Item
   end
 end

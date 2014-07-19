@@ -1,5 +1,5 @@
 module Esq
   class Sort
-    include Eapi::Common
+    include Eapi::Item
   end
 end

@@ -4,7 +4,7 @@ RSpec.describe Esq do
 
   context 'basic behaviour from Eapi' do
     class MyTestKlass
-      include Esq::Common
+      include Esq::Item
 
       property :something
     end
