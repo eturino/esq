@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Esq::VERSION
   spec.authors       = ["Eduardo Turiño"]
   spec.email         = ["eturino@eturino.com"]
-  spec.summary       = %q{ElasticSearch Queries, gem that allows elastic creation of complex ES queries, and end up in hashes. Validation enabled. Uses eapi gem)}
+  spec.summary       = %q{ElasticSearch Queries, gem that allows elastic creation of complex ES queries, and end up in hashes ready to be used with elasticsearch-model / elasticsearch-rails. Validation enabled. Uses eapi gem)}
   #spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
   spec.license       = "MIT"
@@ -28,5 +28,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry-stack_explorer"
   spec.add_development_dependency "pry-doc"
 
-  spec.add_dependency 'eapi', '>= 0.3.0'
+  spec.add_dependency 'eapi', '~> 0.4'
 end

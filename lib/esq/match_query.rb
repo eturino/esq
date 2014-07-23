@@ -1,6 +1,6 @@
 module Esq
   class MatchQuery
-    include Eapi::Item
+    include Esq::Item
 
     property :field
     property :query

@@ -1,5 +1,5 @@
 module Esq
   class Filter
-    include Eapi::Common
+    include Esq::Item
   end
 end
