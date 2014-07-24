@@ -8,7 +8,7 @@ module Esq
 
     property :field,
              required:     true,
-             convert_with: ->(value) { value.nil? ? nil : value.to_s.downcase.to_sym }
+             convert_with: ->(value) { value.nil? ? nil : value.to_s.to_sym }
 
 
     property :direction,
