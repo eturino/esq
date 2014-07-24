@@ -16,5 +16,6 @@ require 'esq/filtered_query'
 require 'esq/match_query'
 require 'esq/query'
 require 'esq/sort'
+require 'esq/sort_element'
 require 'esq/search'
 
