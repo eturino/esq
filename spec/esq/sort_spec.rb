@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe Esq::Sort do
   describe 'renders to [{field => direction}, ...]' do
     subject do
-      described_class.new
+      Esq.sort
       .add(field: :f, direction: :desc)
       .add([:f2])
       .add([:f3, :desc])
