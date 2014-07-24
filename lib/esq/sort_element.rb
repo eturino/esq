@@ -8,7 +8,7 @@ module Esq
 
     property :field,
              required:     true,
-             convert_with: ->(value) { value.nil? ? nil : value.to_sym }
+             convert_with: ->(value) { value.nil? ? nil : value.to_s.downcase.to_sym }
 
 
     property :direction,
@@ -22,17 +22,13 @@ module Esq
              end
 
     def perform_render
-      f = final_prop :field
-      d = final_prop :direction
+      f = final_value_for :field
+      d = final_value_for :direction
 
       {f => d}
     end
 
     private
-    def final_prop(prop)
-      converted_or_default_value_for(prop).to_s.downcase.to_sym
-    end
-
     class Factory
       def self.call(raw)
         return raw if raw.nil? || raw.kind_of?(SortElement)
